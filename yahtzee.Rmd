@@ -42,12 +42,13 @@ sample(1:6, size=1, replace=T)
 Using a loop create a matrix of 10 rolls all consisting of 5 dice in each roll. 
 
 ```{r}
-x <- matrix(, nrow=10, ncol=5)
+rolls <- matrix(, nrow=10, ncol=5)
 for (i in 1:10)
   {
   x[i,] <- sample(1:6, size=5, replace=T)
 }
-x
+rolls
+
 ```
 
 
